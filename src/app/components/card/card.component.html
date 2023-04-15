@@ -1,5 +1,23 @@
 <p>card works!</p>
-<button mat-fab color="primary" aria-label="Example icon button with a delete icon">
-    <!-- <mat-icon>delete</mat-icon> -->
-    hellow
-  </button>
+<button
+  mat-fab
+  color="primary"
+  class="bg-red"
+  aria-label="Example icon button with a delete icon"
+>
+  <mat-icon>delete</mat-icon>
+</button>
+<button mat-raised-button color="primary">Primary</button>
+<button mat-button>Basic</button>
+<button mat-stroked-button color="accent">Accent</button>
+<mat-chip-listbox aria-label="Fish selection">
+  <mat-chip-option>One fish</mat-chip-option>
+  <mat-chip-option>Two fish</mat-chip-option>
+  <mat-chip-option color="accent" selected>Accent fish</mat-chip-option>
+  <mat-chip-option color="warn">Warn fish</mat-chip-option>
+</mat-chip-listbox>
+<style>
+  /* button {
+        background-color: $app-red;
+    } */
+</style>
