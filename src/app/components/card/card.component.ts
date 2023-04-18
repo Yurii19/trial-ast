@@ -28,10 +28,10 @@ export class CardComponent {
     'https://images.freeimages.com/images/large-previews/d4f/www-1242368.jpg';
   giphName: string = 'giphName';
   //loadUrl: string = '';
-   loadUrl = "./assets/download.gif";
+  loadUrl = '/assets/download.gif';
 
   getData() {
-    this.imgUrl = this.loadUrl
+    this.imgUrl = this.loadUrl;
     this.giphyService.getRandomGiph().subscribe((d: any) => {
       const url = d.data.images.original.url;
       // console.log(d, '-', url);
