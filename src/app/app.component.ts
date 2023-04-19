@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CardComponent } from './components/card/card.component';
-import { HomeComponent } from './components/home/home.component';
+import { HomeComponent } from './layouts/home/home.component';
 import { RouterModule } from '@angular/router';
 
 @Component({

@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 //import { HttpClient } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './app/components/home/home.component';
+import { HomeComponent } from './app/layouts/home/home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },

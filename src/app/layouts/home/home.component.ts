@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { randomEndPoint, API_KEY } from 'src/app/varilables';
 // import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
-import { CardComponent } from '../card/card.component';
+import { CardComponent } from '../../components/card/card.component';
 
 
 @Component({
