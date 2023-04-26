@@ -7,9 +7,11 @@ import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 //import { HttpClient } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './app/layouts/home/home.component';
+import { ShopComponent } from './app/layouts/shop/shop.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'shop', component: ShopComponent },
   //{ path: 'second-component', component: SecondComponent },
 ];
 

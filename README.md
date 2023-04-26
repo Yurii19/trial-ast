@@ -1,6 +1,7 @@
 # AstTriapp
-ng generate component --standalone standalone_component_name 
-ng generate service service_name
+- ng generate component --standalone standalone_component_name
+- ng generate service service_name
+- ng generate component component-name --standalone  --inline-template --inline-style
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
