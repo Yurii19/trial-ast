@@ -1,0 +1,20 @@
+.menu {
+  // border: 1px solid red;
+  min-width: 10%;
+  // height: 100%;
+  color: yellow;
+  display: flex;
+  justify-content: space-around;
+  & a {
+    color: #dcdde1;
+    text-decoration: none;
+  }
+}
+.active {
+//   color: #dcdde1 !important;
+  border-bottom: 2px solid #dcdde1;
+}
+.logo{
+    display: inline;
+    padding: 0 20px 0 20px;
+}
