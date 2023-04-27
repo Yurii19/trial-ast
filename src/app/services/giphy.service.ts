@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { randomEndPoint, API_KEY } from 'src/app/varilables';
+import { randomEndPoint, API_KEY } from 'src/app/core/varilables';
 
 @Injectable({
   providedIn: 'root',
