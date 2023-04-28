@@ -33,6 +33,13 @@ export class CardComponent {
   description =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
 
+  mouseAbove: boolean = false;
+
+  handleHover(params: any) {
+    console.log('Mouse enter > ', params);
+    this.mouseAbove = !this.mouseAbove;
+  }
+
   getData() {
     this.imgUrl = this.loadUrl;
     this.giphyService.getRandomGiph().subscribe((d: any) => {

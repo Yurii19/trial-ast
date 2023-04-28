@@ -1,24 +1,17 @@
-<mat-card class="example-card">
-  <!-- <mat-card-header>
-    <div mat-card-avatar class="example-header-image">
-      <mat-icon>image</mat-icon>
-    </div>
-    <mat-card-subtitle>{{ giphName }}</mat-card-subtitle>
-  </mat-card-header> -->
-  <img mat-card-image [src]="imgUrl" alt="picture" />
-  <!-- <img mat-card-image [src]="loadUrl" alt="download" /> -->
-  <!-- <img mat-card-image src="/assets/download.gif" alt="download" /> -->
-  <mat-card-content>
-    <p [matTooltip]="description" matTooltipClass="my-tip">
-      {{ description | slice : 0 : 200 }}...
-    </p>
-  </mat-card-content>
-  <!-- <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-    <button mat-button color="primary" (click)="getData()">
-      <mat-icon>cached</mat-icon>
-      Update icon
-    </button>
-  </mat-card-actions> -->
-</mat-card>
+<div style="display: flex">
+  <mat-card
+  [ngClass]="mouseAbove ? 'hovered': ''"
+    class="example-card"
+    (mouseenter)="handleHover($event)"
+    (mouseleave)="handleHover($event)"
+  >
+    <img mat-card-image [src]="imgUrl" alt="picture" />
+
+    <mat-card-content>
+      <p >
+        {{ description | slice : 0 : (mouseAbove ? 1000 : 200) }}
+        {{ mouseAbove ? "" : "..." }}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>

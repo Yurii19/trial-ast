@@ -3,4 +3,5 @@ export interface IProduct {
   cathergory: String;
   pictures: String[];
   description: String;
+  price: String;
 }
