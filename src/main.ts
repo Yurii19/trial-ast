@@ -10,7 +10,8 @@ import { HomeComponent } from './app/layouts/home/home.component';
 import { ShopComponent } from './app/layouts/shop/shop.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
+  { path: 'home', component: HomeComponent },
   { path: 'shop', component: ShopComponent },
   //{ path: 'second-component', component: SecondComponent },
 ];

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from 'src/app/components/card/card.component';
 import { ProductListComponent } from 'src/app/components/product-list/product-list.component';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-shop',
@@ -22,5 +23,5 @@ import { ProductListComponent } from 'src/app/components/product-list/product-li
   ],
 })
 export class ShopComponent {
-  
+  constructor(private productService: ProductService) {}
 }
