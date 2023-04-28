@@ -9,6 +9,7 @@ export class ProductService {
 
   products: IProduct[] = [
     {
+      id: 0,
       name: 'Washing powder',
       cathergory: 'chemistry',
       pictures: [
@@ -18,6 +19,7 @@ export class ProductService {
       price: '50',
     },
     {
+      id: 1,
       name: 'Washing powder',
       cathergory: 'chemistry',
       pictures: [
@@ -27,6 +29,7 @@ export class ProductService {
       price: '40',
     },
     {
+      id: 2,
       name: 'Socks',
       cathergory: 'clothe',
       pictures: [

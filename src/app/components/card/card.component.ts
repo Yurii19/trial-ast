@@ -4,7 +4,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { GiphyService } from 'src/app/services/giphy.service';
 import { MatCardModule } from '@angular/material/card';
 import { IProduct } from 'src/app/core/types';
 
@@ -25,13 +24,16 @@ import { IProduct } from 'src/app/core/types';
 })
 export class CardComponent {
   @Input() product: IProduct = {
+    id: 0,
     name: 'Product name',
     cathergory: 'cathergory',
-    pictures: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRJYp_2xLxb-MQjJmwBEjkEJzrHwiPvTIXgQ&usqp=CAU'],
+    pictures: [
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRJYp_2xLxb-MQjJmwBEjkEJzrHwiPvTIXgQ&usqp=CAU',
+    ],
     description: 'Producst description',
     price: '0 uah',
   };
-  constructor(public giphyService: GiphyService) {}
+  constructor() {}
 
   imgUrl: string =
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRJYp_2xLxb-MQjJmwBEjkEJzrHwiPvTIXgQ&usqp=CAU';
