@@ -1,7 +1,7 @@
 export interface IProduct {
-  name: String;
-  cathergory: String;
-  pictures: String[];
-  description: String;
-  price: String;
+  name: string;
+  cathergory: string;
+  pictures: string[];
+  description: string;
+  price: string;
 }

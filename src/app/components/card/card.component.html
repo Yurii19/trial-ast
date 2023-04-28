@@ -5,13 +5,15 @@
     (mouseenter)="handleHover($event)"
     (mouseleave)="handleHover($event)"
   >
-    <img mat-card-image [src]="imgUrl" alt="picture" />
+    <img mat-card-image [src]="product.pictures[0]" alt="picture" />
 
     <mat-card-content>
+      <h4>Name: {{product.name}}</h4>
       <p >
-        {{ description | slice : 0 : (mouseAbove ? 1000 : 200) }}
+        {{ product.description | slice : 0 : (mouseAbove ? 1000 : 200) }}
         {{ mouseAbove ? "" : "..." }}
       </p>
+      <span>Price: {{product.price | uppercase}}</span>
     </mat-card-content>
   </mat-card>
 </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -6,6 +6,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { GiphyService } from 'src/app/services/giphy.service';
 import { MatCardModule } from '@angular/material/card';
+import { IProduct } from 'src/app/core/types';
 
 @Component({
   selector: 'app-card',
@@ -23,6 +24,13 @@ import { MatCardModule } from '@angular/material/card';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent {
+  @Input() product: IProduct = {
+    name: 'Product name',
+    cathergory: 'cathergory',
+    pictures: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRJYp_2xLxb-MQjJmwBEjkEJzrHwiPvTIXgQ&usqp=CAU'],
+    description: 'Producst description',
+    price: '0 uah',
+  };
   constructor(public giphyService: GiphyService) {}
 
   imgUrl: string =
@@ -40,15 +48,15 @@ export class CardComponent {
     this.mouseAbove = !this.mouseAbove;
   }
 
-  getData() {
-    this.imgUrl = this.loadUrl;
-    this.giphyService.getRandomGiph().subscribe((d: any) => {
-      const url = d.data.images.original.url;
-      // console.log(d, '-', url);
-      this.imgUrl = url;
-      this.giphName = d.data.title;
-    });
+  // getData() {
+  //   this.imgUrl = this.loadUrl;
+  //   this.giphyService.getRandomGiph().subscribe((d: any) => {
+  //     const url = d.data.images.original.url;
+  //     // console.log(d, '-', url);
+  //     this.imgUrl = url;
+  //     this.giphName = d.data.title;
+  //   });
 
-    console.log('work');
-  }
+  //   console.log('work');
+  // }
 }

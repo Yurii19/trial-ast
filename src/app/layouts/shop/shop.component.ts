@@ -11,7 +11,7 @@ import { ProductService } from 'src/app/services/product.service';
   template: `
     <div>
       <h3>shop works!</h3>
-      <app-product-list></app-product-list>
+      <app-product-list [products]="productService.products"></app-product-list>
     </div>
   `,
   styles: [
@@ -23,5 +23,7 @@ import { ProductService } from 'src/app/services/product.service';
   ],
 })
 export class ShopComponent {
-  constructor(private productService: ProductService) {}
+  constructor(public productService: ProductService) {
+    
+  }
 }

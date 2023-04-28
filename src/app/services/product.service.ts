@@ -7,29 +7,33 @@ import { IProduct } from '../core/types';
 export class ProductService {
   constructor() {}
 
-  
+  products: IProduct[] = [
+    {
+      name: 'Washing powder',
+      cathergory: 'chemistry',
+      pictures: [
+        'https://content.rozetka.com.ua/goods/images/big/298414535.jpg',
+      ],
+      description: 'Пральний порошок для ручного прання',
+      price: '50',
+    },
+    {
+      name: 'Washing powder',
+      cathergory: 'chemistry',
+      pictures: [
+        'https://content.rozetka.com.ua/goods/images/big/298414588.jpg',
+      ],
+      description: 'Пральний порошок для ручного прання',
+      price: '40',
+    },
+    {
+      name: 'Socks',
+      cathergory: 'clothe',
+      pictures: [
+        'https://content.rozetka.com.ua/goods/images/big/298414535.jpg',
+      ],
+      description: 'Шкарпетки для щоденного носіння',
+      price: '30',
+    },
+  ];
 }
-
-const products: IProduct[] = [
-  {
-    name: 'Washing powder',
-    cathergory: 'chemistry',
-    pictures: ['https://content.rozetka.com.ua/goods/images/big/298414535.jpg'],
-    description: 'Пральний порошок для ручного прання',
-    price: '50',
-  },
-  {
-    name: 'Washing powder',
-    cathergory: 'chemistry',
-    pictures: ['https://content.rozetka.com.ua/goods/images/big/298414588.jpg'],
-    description: 'Пральний порошок для ручного прання',
-    price: '40',
-  },
-  {
-    name: 'Socks',
-    cathergory: 'clothe',
-    pictures: ['https://content.rozetka.com.ua/goods/images/big/298414535.jpg'],
-    description: 'Шкарпетки для щоденного носіння',
-    price: '30',
-  },
-];
