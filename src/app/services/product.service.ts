@@ -11,7 +11,7 @@ export class ProductService {
     {
       id: 0,
       name: 'Washing powder',
-      cathergory: 'chemistry',
+      cathegory: 'chemistry',
       pictures: [
         'https://content.rozetka.com.ua/goods/images/big/298414535.jpg',
       ],
@@ -21,7 +21,7 @@ export class ProductService {
     {
       id: 1,
       name: 'Washing powder',
-      cathergory: 'chemistry',
+      cathegory: 'chemistry',
       pictures: [
         'https://content.rozetka.com.ua/goods/images/big/298414588.jpg',
       ],
@@ -31,7 +31,7 @@ export class ProductService {
     {
       id: 2,
       name: 'Socks',
-      cathergory: 'clothe',
+      cathegory: 'clothe',
       pictures: [
         'https://content.rozetka.com.ua/goods/images/big/298414535.jpg',
       ],
