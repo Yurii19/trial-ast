@@ -33,7 +33,7 @@ export class ProductService {
       name: 'Socks',
       cathegory: 'clothe',
       pictures: [
-        'https://content.rozetka.com.ua/goods/images/big/298414535.jpg',
+        'https://images.prom.ua/3041908233_w640_h640_zhitomirskie-hlopkovye-noski.jpg',
       ],
       description: 'Шкарпетки для щоденного носіння',
       price: '30',

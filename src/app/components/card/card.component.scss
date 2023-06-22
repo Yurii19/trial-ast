@@ -1,10 +1,15 @@
 .mat-mdc-card {
-  width: 250px;
+  width: 150px;
   //   border: 2px solid brown;
   margin: 0 auto;
-  background-color: rgba(87, 101, 116, 0.1);
+  // background-color: rgba(87, 101, 116, 0.1);
 }
 .hovered {
   // background-color: beige;
   border: 1px solid black;
+}
+.image {
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
 }
