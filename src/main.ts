@@ -9,12 +9,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './app/layouts/home/home.component';
 import { ShopComponent } from './app/layouts/shop/shop.component';
 import { ProductDetailsComponent } from './app/components/product-details/product-details.component';
+import { AdminComponent } from './app/layouts/admin/admin.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'home', component: HomeComponent },
   { path: 'shop', component: ShopComponent },
   { path: 'details/:index', component: ProductDetailsComponent },
+  { path: 'admin', component: AdminComponent },
 ];
 
 bootstrapApplication(AppComponent, {
