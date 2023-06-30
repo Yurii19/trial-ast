@@ -1,15 +1,24 @@
 .mat-mdc-card {
-  width: 150px;
-  //   border: 2px solid brown;
+  width: 200px;
   margin: 0 auto;
-  // background-color: rgba(87, 101, 116, 0.1);
+}
+.description {
+  // border: 1px solid blue;
+  height: 40px;
+  overflow: hidden;
 }
 .hovered {
-  // background-color: beige;
   border: 1px solid black;
 }
 .image {
+  display: inline;
+  height: 100%;
   max-width: 100%;
-  height: auto;
-  padding: 10px;
+}
+.img-container {
+  height: 200px;
+  margin: 0 auto;
+}
+h4 {
+  margin: 20px 0 20px 0;
 }

@@ -15,7 +15,7 @@ export class ProductService {
       pictures: [
         'https://content.rozetka.com.ua/goods/images/big/298414535.jpg',
       ],
-      description: 'Пральний порошок для ручного прання',
+      description: 'Пральний порошок для ручного прання. Пральний порошок для ручного прання. Пральний порошок для ручного прання',
       price: '50',
     },
     {

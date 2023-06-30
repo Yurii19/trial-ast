@@ -1,26 +1,24 @@
-<div style="display: flex">
+<div>
   <mat-card
-    [ngClass]="mouseAbove ? 'hovered' : ''"
-    class="example-card"
     (mouseenter)="handleHover($event)"
     (mouseleave)="handleHover($event)"
   >
-    <img
-      class="image"
-      mat-card-image
-      [src]="product.pictures[0]"
-      alt="picture"
-    />
-
+    <div class="img-container">
+      <img
+        class="image"
+        mat-card-image
+        [src]="product.pictures[0]"
+        alt="picture"
+      />
+    </div>
     <mat-card-content>
       <h4>
         <b> {{ product.name }}</b>
       </h4>
-      <p>
-        {{ product.description | slice : 0 : (mouseAbove ? 1000 : 200) }}
-        {{ mouseAbove ? "" : "..." }}
+      <p class="description">
+        {{ product.description }}
       </p>
-      <span>Price: {{ product.price | uppercase }}</span
+      <span>Price: {{ product.price }}</span
       ><br />
       <span> <a href="/details/{{ index }}">More details</a></span>
     </mat-card-content>
