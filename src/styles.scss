@@ -1,11 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
 $app-red: #ff6b6b;
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-// .bg-red {
-//     background-color: $app-red !important;
-//     color: white !important;
-// }
-
+.my-tip {
+    // border: 1px solid red;
+  & * {
+    background-color: white !important;
+    color: black !important;
+    width: 300px !important;
+  }
+}

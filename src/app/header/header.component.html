@@ -1,0 +1,42 @@
+<mat-toolbar color="primary">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+    [matMenuTriggerFor]="menu"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="logo">Toi@shop</span>
+  <div>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <a routerLink="home" class="text-dark">Home</a>
+      </button>
+      <button mat-menu-item>
+        <a routerLink="shop" class="text-dark">Shop</a>
+      </button>
+    </mat-menu>
+  </div>
+  <div class="menu" >
+    <!-- <mat-menu > -->
+    <!-- <button > -->
+    <a routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    <!-- </button>
+      <button > -->
+    <a routerLink="shop" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Shop</a>
+    <!-- </button> -->
+    <!-- </mat-menu> -->
+  </div>
+  <span class="example-spacer"></span>
+  <button
+    mat-icon-button
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+  ></button>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with share icon"
+  ></button>
+</mat-toolbar>

@@ -1,0 +1,10 @@
+<div class="container" *ngIf="product$ | async as product">
+  <img [src]="product.pictures[0]" alt="picture" height="200" />
+  <h2>{{ product.name }}</h2>
+  <span>{{ product.cathegory }}</span
+  ><br />
+  <span>{{ product.description }}</span
+  ><br />
+  <span>{{ product.price }}</span
+  ><br />
+</div>
