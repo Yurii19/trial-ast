@@ -1,4 +1,4 @@
-<div>
+<div class="container">
   <mat-card
     (mouseenter)="handleHover($event)"
     (mouseleave)="handleHover($event)"
@@ -12,9 +12,9 @@
       />
     </div>
     <mat-card-content>
-      <h4>
-        <b> {{ product.name }}</b>
-      </h4>
+      <span class="card-header">{{ product.name }}</span>
+        
+     
       <p class="description">
         {{ product.description }}
       </p>

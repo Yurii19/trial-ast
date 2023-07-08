@@ -10,7 +10,7 @@ export class ProductService {
   products: IProduct[] = [
     {
       id: 0,
-      name: 'Washing powder',
+      name: 'Washing powder washing powder for home',
       cathegory: 'chemistry',
       pictures: [
         'https://content.rozetka.com.ua/goods/images/big/298414535.jpg',
