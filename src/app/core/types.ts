@@ -6,3 +6,5 @@ export interface IProduct {
   description: string;
   price: string;
 }
+
+export const cathegories = ['Chemistry', 'Clothes', 'Decorations', 'Others'];

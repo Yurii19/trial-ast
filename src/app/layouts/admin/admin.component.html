@@ -1,1 +1,31 @@
-<p>admin works!</p>
+<span class="date">Admin. Today {{ date }}</span>
+<div class="form-container">
+  <form action="#">
+    <mat-form-field appearance="outline">
+      <mat-label>Product name</mat-label>
+      <input matInput placeholder="Name" />
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Product cathegory</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let cat of selectCathegories" [value]="cat">
+          {{ cat }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Image URL</mat-label>
+      <input matInput placeholder="Image" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Image URL</mat-label>
+      <input type="number" matInput placeholder="Image" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Description</mat-label>
+      <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+    </mat-form-field>
+  </form>
+</div>
